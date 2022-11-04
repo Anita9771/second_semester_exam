@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import PulseLoader from "react-spinners/PulseLoader";
 import { Pagination } from "../components";
 
-const GithubList = ({number}) => {
+const GithubList = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [reposPerPage, setReposPerPage] = useState(5);
+  // const [id, setId] = useState(repo.id);
+
+  
+
+  
 
   useEffect(() => {
     const getRepos = async () => {
@@ -17,7 +23,9 @@ const GithubList = ({number}) => {
       setRepos(data);
 
       setLoading(false);
+      
     };
+    
     getRepos();
   }, []);
 
@@ -30,6 +38,11 @@ const GithubList = ({number}) => {
     setCurrentPage(number);
 
   let lastPage = Math.ceil(repos.length / reposPerPage);
+
+  const params = useParams();
+  const {repoId} = params
+
+    const navigate = useNavigate();
 
   return (
     <div className="github-list">
@@ -50,7 +63,10 @@ const GithubList = ({number}) => {
             <div key={repo.id}>
               <li>{repo.name}</li>
               <p>{repo.description}</p>
+              
+              <button onClick={() => navigate('/repositories/' + repo.id)}>check</button>
               <hr />
+
             </div>
           ))}
         </ul>
@@ -76,6 +92,10 @@ const GithubList = ({number}) => {
           </button>
 
           {currentPage} of {lastPage}
+
+          <br />
+
+          {repoId}
     </div>
   );
 };

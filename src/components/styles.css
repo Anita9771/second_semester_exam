@@ -46,7 +46,7 @@
     color: rgb(228, 225, 225);
 }
 
-.error-page{
+.error-page, .error-boundary{
     background-color: #2C4546;
     width: 95%;
     margin:5vh 2vw 0 2vw;
@@ -60,9 +60,10 @@
     flex-direction: column;
     line-height: 40px;
     font-weight: bold;
+    color: white;
 }
 
-.error-page .link{
+.error-page .link, .error-boundary .link{
     color: white;
     /* text-decoration: none; */
 }
