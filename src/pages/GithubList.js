@@ -75,7 +75,7 @@ const GithubList = () => {
           reposPerPage={reposPerPage}
           totalRepos={repos.length}
           paginate={paginate}
-          // disabled={currentPage === paginate}
+          currentPage={currentPage}
         />
         <button
           disabled={currentPage >= lastPage}
