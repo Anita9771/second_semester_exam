@@ -46,6 +46,10 @@
     color: rgb(228, 225, 225);
 }
 
+.home-nav .link:hover, .home-nav .link:focus{
+    font-weight: bold;
+}
+
 .error-page, .error-boundary{
     background-color: #2C4546;
     width: 95%;
@@ -68,5 +72,6 @@
     /* text-decoration: none; */
 }
 
-.error-page {
+.error-page .link:hover, .error-boundary .link:hover{
+    color: rgb(93, 93, 255);
 }

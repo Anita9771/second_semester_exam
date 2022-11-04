@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import GithubLogo from "../assets/images/github-logo.png";
 import "./styles.css";
-import { useParams } from 'react-router';
 
 
 const HomeNav = ({id}) => {
-  // const { id } = useParams();
+  const githubLink = "https://github.com/Anita9771/";
   
   return (
     <nav className="home-nav">
@@ -18,7 +17,7 @@ const HomeNav = ({id}) => {
         <Link to='/services' className="link"><li>Services</li></Link>
       </ul>
       <div className="logo">
-        <Link to='https://github.com/Anita9771/'><img src={GithubLogo} alt="github logo" /></Link>
+        <a href='https://github.com/Anita9771/' target="_blank"><img src={GithubLogo} alt="github logo" /></a>
       </div>
     </nav>
   );
