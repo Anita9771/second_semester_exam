@@ -1,0 +1,108 @@
+.homepage, .github-list{
+    background-color: #2C4546;
+    width: 95%;
+    margin:5vh auto 0 auto;
+    min-height: 95vh;
+    padding-top: 2rem;
+}
+
+.homepage .homepage-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.homepage .homepage-content{
+    height: 28rem;
+    /* border: 1px solid white; */
+    width: 20rem;
+    border-radius: 20rem;
+    margin-top: 8rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage .left{
+    background-color: rgb(21, 27, 26);
+    z-index: 5;
+    color: white;
+    flex-direction: column;
+    margin-right: -3rem;
+    /* justify-content: space-around; */
+}
+
+.homepage .middle{
+    background: url('../assets/images/cyan-abstract.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    z-index: 3;
+    margin-right: -3rem;
+}
+
+.homepage .middle p{
+    background-color: rgb(21, 27, 26);
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+.homepage .right img{
+    object-fit: fill;
+    width: 25rem;
+    height: 25rem;
+    margin-top: 3rem;
+    /* z-index: 10; */
+}
+
+.homepage .left button{
+    background-color: rgb(250, 184, 60);
+    border: none;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+.homepage .left .btn{
+    color: black;
+    text-decoration: none;
+}
+
+.homepage .left button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.homepage .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    color: rgb(228, 225, 225);
+}
+
+.github-list .repos{
+    color: rgb(228, 225, 225);
+    margin: 10% auto auto 10%;
+    line-height: 28px;
+    font-size: 1.2rem;
+    width: 70%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.github-list .repos hr{
+    margin-bottom: 1.5rem;
+    border: 1px solid white;
+}
