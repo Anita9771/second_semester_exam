@@ -2,9 +2,9 @@
 
 ## Error pages implementation
 
-Find 404 page by typing an invalid URL route
+*Find 404 page by typing an invalid URL route
 
-Find Error boundary in the services page
+*Find Error boundary in the services page
 
 
-Working demo hosted [HERE](https://annietah-repos.netlify.app)
+Working demo hosted *[HERE](https://annietah-repos.netlify.app)
