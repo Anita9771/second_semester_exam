@@ -1,6 +1,6 @@
 # second_semester_exam
 
-##Error pages implementation
+## Error pages implementation
 
 Find 404 page by typing an invalid link
 
